@@ -1,0 +1,12 @@
+https://dzone.com/articles/aspnet-core-crud-with-reactjs-and-entity-framework
+
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer/2.2.0
+https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools/2.2.0
+
+Install-Package Microsoft.EntityFrameworkCore.SqlServer -Version 2.2.0
+Install-Package Microsoft.EntityFrameworkCore.Tools -Version 2.2.0
+Install-Package Microsoft.EntityFrameworkCore.Design -Version 2.2.0
+
+
+Scaffold-DbContext "Server=(LocalDb)\MSSQLLocalDB;Database=ReactJS;Trusted_Connection=True;MultipleActiveResultSets=true" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models -Tables tblEmployee,tblCities
+
